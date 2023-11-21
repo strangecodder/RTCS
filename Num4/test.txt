@@ -1,3 +1,0 @@
-strangecodder tty2         2023-11-19 17:47 (:0)
-strangecodder pts/0        2023-11-19 17:47 (:0)
-strangecodder pts/1        2023-11-19 20:43 (:0)
