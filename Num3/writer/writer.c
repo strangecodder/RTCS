@@ -9,9 +9,13 @@ int main(){
     int fd;
     char message[] = "Третья практика ВСРВ, студент Сухов А.Д.";
     int length = strlen(message);
+
     fd=open("text.txt", O_CREAT|O_RDWR|O_TRUNC);
     write(fd,message,length);
-    printf("Запись в файл прошла успешно\n");
-    //close(fd);
-    //exit(0);
+    
+    if(fd == -1){
+        printf("Запись не удалась\n");
+    }else{
+        printf("Запись в файл прошла успешно\n");
+    }
 }

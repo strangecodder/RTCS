@@ -1,5 +1,7 @@
 #include <stdio.h>       
 #include <pthread.h>     
+#include <string.h>
+#include <stdlib.h>
 
 #define NUM_EMPLOYEES 2
 

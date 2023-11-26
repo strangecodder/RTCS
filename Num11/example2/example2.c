@@ -1,5 +1,7 @@
 #include <stdio.h>       /* standard I/O routines                 */
 #include <pthread.h>     /* pthread functions and data structures */
+#include <string.h>
+#include <stdlib.h>
 
 #define NUM_EMPLOYEES 2                   /* size of each array.    */
 
@@ -56,8 +58,7 @@ do_loop(void* data)
 }
 
 /* like any C program, program's execution begins in main */
-int
-main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
     int        i;              /* loop counter                          */
     int        thr_id1;        /* thread ID for the first new thread    */

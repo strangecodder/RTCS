@@ -7,12 +7,13 @@
 
 int main(){
     int fd;
-    char *message = (char*) malloc(sizeof(int) * 2);
+    // выделяем память массивам message и name
+    char *message = (char*) malloc(sizeof(int) * 2); 
     char *name = (char*) malloc(sizeof(int)* 2);
 
 
     printf("Введите название файла: \n");
-    scanf("%[^\n]%*c",name);
+    scanf("%[^\n]%*c",name); //%*с обрабатывает символ и отбрасывает его (в моём случае - перенос на другую строку)
     printf("Введите сообщение, которое хотите записать: \n");
     scanf("%[^\n]%*c",message);
 
